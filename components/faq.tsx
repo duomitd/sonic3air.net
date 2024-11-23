@@ -1,21 +1,8 @@
+import { getMdxContent } from "@/lib/mdx";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
 export function FAQ() {
-  const faqs = [
-    {
-      question: "How do I install Sonic 3 A.I.R.?",
-      answer:
-        "Download the ZIP file, extract it, and run Sonic3AIR.exe. It's that simple!",
-    },
-    {
-      question: "Is controller support available?",
-      answer:
-        "Yes, Sonic 3 A.I.R. supports various controller configurations for your gaming preference.",
-    },
-    {
-      question: "Can I install mods?",
-      answer:
-        "Place downloaded mod files in the game's mod folder and select them at startup.",
-    },
-  ];
+  const { content } = getMdxContent(`/mdx/en/faq.mdx`);
 
   return (
     <section id="faq" className="py-20 bg-white">
@@ -23,15 +10,11 @@ export function FAQ() {
         <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
           Frequently Asked Questions
         </h2>
-        <div className="max-w-3xl mx-auto">
-          {faqs.map((faq, index) => (
-            <div key={index} className="mb-10">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                {faq.question}
-              </h3>
-              <p className="text-gray-600">{faq.answer}</p>
-            </div>
-          ))}
+        <div
+          style={{ maxWidth: "100%", borderRadius: "0.5rem" }}
+          className="prose lg:prose-xl prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg bg-white p-4 lg:p-8 w-full "
+        >
+          <MDXRemote source={content} />
         </div>
       </div>
     </section>

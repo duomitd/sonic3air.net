@@ -15,7 +15,7 @@ export function Download() {
           Windows, macOS, and Android.
         </p>
         <Link
-          href="https://sonic3air.org"
+          href="https://github.com/duomitd/sonic3air.net/blob/main/dowload.md"
           className="bg-blue-600 text-white py-4 px-10 rounded-full text-xl font-semibold 
                          hover:bg-blue-700 transition duration-300 inline-block"
         >

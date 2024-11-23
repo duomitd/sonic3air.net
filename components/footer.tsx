@@ -5,10 +5,10 @@ export function Footer() {
     <footer className="bg-gray-100 py-12">
       <div className="container mx-auto px-4 text-center">
         <p className="text-gray-600 mb-4">
-          &copy; 2023 Sonic 3 A.I.R. Project. All rights reserved.
+          &copy; 2024 Sonic 3 A.I.R. Project. All rights reserved.
         </p>
         <div className="space-x-4">
-          <Link
+          {/* <Link
             href="#"
             className="text-gray-600 hover:text-gray-900 transition duration-300"
           >
@@ -19,9 +19,9 @@ export function Footer() {
             className="text-gray-600 hover:text-gray-900 transition duration-300"
           >
             Terms of Service
-          </Link>
+          </Link> */}
           <Link
-            href="https://github.com/Sonic3AIR/Sonic3AIR"
+            href="https://github.com/duomitd/sonic3air.net"
             className="text-gray-600 hover:text-gray-900 transition duration-300"
           >
             GitHub

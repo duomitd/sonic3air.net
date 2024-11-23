@@ -1,5 +1,6 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
+import YouTubeEmbed from "./youtube-embed";
 
 export function Hero() {
   return (
@@ -20,13 +21,18 @@ export function Hero() {
           Download Now
         </Link>
         <div className="mt-20">
-          <Image
+          <YouTubeEmbed
+            videoId="peaoB8o9sdY"
+            title="Sonic 3 A.I.R game play video cover"
+            coverImage="/cover.png"
+          />
+          {/* <Image
             src="/placeholder.svg"
             alt="Sonic 3 A.I.R. Gameplay"
             width={1200}
             height={675}
             className="rounded-lg shadow-2xl mx-auto"
-          />
+          /> */}
         </div>
       </div>
     </section>
