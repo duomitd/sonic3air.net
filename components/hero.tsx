@@ -10,7 +10,7 @@ export function Hero() {
         </h1>
         <p className="text-xl mb-12 text-gray-700 max-w-2xl mx-auto">
           Experience Angel Island Revisited. A modern remake of the classic,
-          reimagined for today's gamers.
+          reimagined for today&apos;s gamers.
         </p>
         <Link
           href="#download"
