@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -11,6 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>{children}</body>
+      <GoogleAnalytics gaId="G-YNRP49C67N" />
     </html>
   );
 }
