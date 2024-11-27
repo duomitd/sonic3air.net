@@ -7,22 +7,16 @@ export function Header() {
         <div className="text-2xl font-bold text-gray-900">Sonic 3 A.I.R.</div>
         <div className="hidden md:flex space-x-8">
           <Link
-            href="#features"
+            href="/"
             className="text-gray-600 hover:text-gray-900 transition duration-300"
           >
-            Features
+            Home
           </Link>
           <Link
-            href="#download"
+            href="/sonic-3-air-android-guide"
             className="text-gray-600 hover:text-gray-900 transition duration-300"
           >
-            Download
-          </Link>
-          <Link
-            href="#faq"
-            className="text-gray-600 hover:text-gray-900 transition duration-300"
-          >
-            FAQ
+            Android Guide
           </Link>
         </div>
       </nav>
