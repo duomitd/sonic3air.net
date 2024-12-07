@@ -4,6 +4,8 @@ import matter from "gray-matter";
 
 export function getMdxContent(filename: string) {
   const filePath = path.join(process.cwd(), filename);
+  console.log(filePath);
+
   const fileContent = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContent);
   return { metadata: data, content };
